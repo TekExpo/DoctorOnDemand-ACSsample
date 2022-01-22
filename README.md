@@ -18,10 +18,6 @@ This means that you can have your own group calling scenario up and running by d
 
 ## Step 2 - Deploy this code
 
-Click https://github.com/tomorgan/FamilyCall-ACSSampleAsAzStaticApp/generate
-
-In the Repository name box, enter the name you want for the project
-
 Click __Create repository from template__.
 
 ## Step 3 - Create a Static Web App and link to this code
