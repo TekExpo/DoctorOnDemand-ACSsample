@@ -1,10 +1,12 @@
-# Simple Family Call
+# DoctorOnDemand using Azure Communication Services
 
 ## Azure Communication Services Group Calling features deployed as Azure Static Web App with Azure Functions
 
 This project builds heavily on this sample project:
 
 [Azure Communication Services Group Calling Hero Sample](https://github.com/Azure-Samples/communication-services-web-calling-hero)
+
+[Family Call App](https://github.com/tomorgan/FamilyCall-ACSSampleAsAzStaticApp)
 
 It takes the above sample, and makes it work with Azure Static Web Apps. It does this by implementing the back-end part (to get access keys etc) as API calls using Azure Functions, which are now [built right into Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/add-api).
 
@@ -17,6 +19,10 @@ This means that you can have your own group calling scenario up and running by d
 [Create a new Azure Communication Services instance]. Once it's created, go to Keys and make a note of one of the Connection Strings.
 
 ## Step 2 - Deploy this code
+
+Click https://github.com/TekExpo/DoctorOnDemand-ACSSample/generate
+
+In the Repository name box, enter the name you want for the project
 
 Click __Create repository from template__.
 
@@ -64,7 +70,7 @@ You can see this happening by going back to GitHub, and choose the Actions secti
 
 Eventually, this action will fail. You can examine the reason why, but it's most probably because of these errors:
 
-These are warnings that I've not been able to workaround in the code, and the only fix I've found is to disable checking for these warnings in the build process.
+Tim Morgan has provided a workaround for this as below:
 
 To fix this, go back to the code in GitHub. At the top, you'll notice that a new folder has been added: __.github/workflows__. In that folder is a new .yaml file. Edit that file, and insert the following lines immediately after the "name" entry on/around line 16:
 
