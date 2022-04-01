@@ -10,7 +10,7 @@ This project builds heavily on this sample project:
 
 It takes the above sample, and makes it work with Azure Static Web Apps. It does this by implementing the back-end part (to get access keys etc) as API calls using Azure Functions, which are now [built right into Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/add-api).
 
-This means that you can have your own group calling scenario up and running by deploying a single web app!
+This means that you can have your own Doctor On Demand up and running by deploying a single web app!
 
 # How to deploy
 
